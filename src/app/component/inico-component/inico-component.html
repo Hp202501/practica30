@@ -1,0 +1,20 @@
+<h2>Ejercicio: Mostrar y Ocultar Contenido</h2>
+
+<!-- Botones Bootstrap -->
+<p>
+  <button class="btn btn-primary me-2" (click)="mostrar()" [disabled]="showDetails">
+    Mostrar
+  </button>
+
+  <button class="btn btn-danger" (click)="ocultar()" [disabled]="!showDetails">
+    Ocultar
+  </button>
+</p>
+
+<!-- Bloque condicional -->
+@if (showDetails) {
+  <div class="alert alert-info mt-3" role="alert">
+    Esta Complicado <code>showDetails</code> usar angular Ingeniero
+  </div>
+}
+
